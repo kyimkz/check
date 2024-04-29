@@ -174,3 +174,5 @@ SILENCED_SYSTEM_CHECKS = ['captcha.recaptcha_test_key_error']
 
 PAYPAL_RECEIVER_EMAIL = 'kyimkz@gmail.com'
 PAYPAL_TEST = True
+
+WHITENOISE_MANIFEST_STRICT = False
