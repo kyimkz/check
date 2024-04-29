@@ -10,7 +10,17 @@
   --hover-color: rgb(93, 93, 93);
 }
 
+[data-theme="light"] {
+  --color-bg: #ffffff;
+  --color-fg: #000000;
+  --primary-color: #222e37;
+}
 
+[data-theme="dark"] {
+  --color-bg: #000000;
+  --color-fg: #ffffff;
+  --primary-color: #ffffff;
+}
 * {
   margin: 0; padding: 0;
   box-sizing: border-box;
@@ -105,3 +115,10 @@
 }
 
 /* <!-- general function --> */
+
+
+.heloooo {
+  margin-top: 30px;
+  text-decoration: none;
+  color: var(--primary-color);
+}

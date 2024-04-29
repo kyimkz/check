@@ -7,7 +7,17 @@
   --background-header-navbar: #ffffff;
   --hover-color: rgb(93, 93, 93);
 }
+[data-theme="light"] {
+  --color-bg: #ffffff;
+  --color-fg: #000000;
+  --primary-color: #222e37;
+}
 
+[data-theme="dark"] {
+  --color-bg: #000000;
+  --color-fg: #ffffff;
+  --primary-color: #ffffff;
+}
 * {
   margin: 0; padding: 0;
   box-sizing: border-box;
@@ -117,4 +127,15 @@
   color: #ffffff;
   transition: .6s;
 }
+
+.error-box {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+
+
 /* <!-- general section --> */

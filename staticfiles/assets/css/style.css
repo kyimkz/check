@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Lancelot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
 
 * {
   margin: 0; padding: 0;
@@ -10,7 +11,17 @@
   text-decoration: none;
   transition: .2s linear;
 }
+[data-theme="light"] {
+  --color-bg: #ffffff;
+  --color-fg: #000000;
+  --primary-color: #222e37;
+}
 
+[data-theme="dark"] {
+  --color-bg: #000000;
+  --color-fg: #ffffff;
+  --primary-color: #ffffff;
+}
 html{
   font-size: 62.5%;
 }
@@ -24,6 +35,11 @@ html{
 
 .image img{
   width: 100%;   
+  border-bottom: 1px solid;
+  margin-top: 60px;
+}
+.index {
+  transform: translateY(0);
 }
 
 .content {
@@ -38,9 +54,16 @@ html{
 .title {
   background-color: transparent;
   font-size:4vw;
-  color: #1e201f;
+  color: var(--color-bg);
   font-weight: 500;
   font-family: "League Spartan", sans-serif;
+
+  transform: translateY(-1);
+  z-index: 99;
+  text-align: center;
+}
+#new_collection {
+  transform: translateY(-1);
 }
 
 .button {
@@ -51,7 +74,7 @@ html{
 .btn {
   background-color: transparent;
   font-size:2.8vw;
-  color: #375873;
+  color: #4f98d4;
   font-family: "Bodoni Moda", serif;
 }
 
@@ -61,12 +84,84 @@ html{
 /* --------------------------------------------------------------------------- */
 /* new_season */
 
-
-.new_season {
+.gennnn {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+}
+.new_season, .blabla, .alkcmad {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-direction: column;
+}
+.blabla, .alkcmad {
+  border-bottom: 1px solid;
+}
+.first {
+  gap: 0px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.firstfirst {
+  position: relative;
+  height: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 40px;
+  background: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+h1.coolest.h1, p.coolest {
+  font-family: "Pinyon Script", cursive;
+}
+
+.coolest .h1 {
+  margin-top: 10px;
+}
+.sklskdlsk {
+  display: flex;
+  justify-content: end;
+}
+.second-- {
+  width: 100%;
+  max-width: 900px;
+  float: right;
+}
+.coolest {
+  font-weight: 100;
+  font-size: 2.6vw;
+  margin: 10px;
+}
+.lkdvnasdlkv {
+  overflow: hidden;
+  transform: translateY(0);
+}
+.akjnfcajscf {
+  width: fit-content;
+  overflow: hidden;
+  height: 10vw;
+  margin-right: -2200px;
+  border-bottom: 1px solid;
+}
+.clothessss {
+  font-size: 5vw;
+  font-weight: 100;
+  transform: rotate(18deg);
+  overflow: hidden;
+}
+.secondsecond {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.first-- {
+  width: 100%;
+  max-width: 500px;
 }
 
 .gen {

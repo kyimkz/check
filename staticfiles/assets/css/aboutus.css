@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Lancelot&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&display=swap');
 
 :root {
   --primary-color: #222e37; /* Define a root variable for primary color */
@@ -12,7 +13,17 @@
   --hover-color: rgb(211, 211, 211);
 }
 
+[data-theme="light"] {
+  --color-bg: #ffffff;
+  --color-fg: #000000;
+  --primary-color: #222e37;
+}
 
+[data-theme="dark"] {
+  --color-bg: #000000;
+  --color-fg: #ffffff;
+  --primary-color: #ffffff;
+}
 *{
   font-family: var(--primary-font);
   margin: 0; padding: 0;

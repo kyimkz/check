@@ -12,7 +12,17 @@
   --background-header-navbar: #ffffff;
   --hover-color: rgb(211, 211, 211);
 }
+[data-theme="light"] {
+  --color-bg: #ffffff;
+  --color-fg: #000000;
+  --primary-color: #222e37;
+}
 
+[data-theme="dark"] {
+  --color-bg: #000000;
+  --color-fg: #ffffff;
+  --primary-color: #ffffff;
+}
 
 *{
   font-family: var(--primary-font);
